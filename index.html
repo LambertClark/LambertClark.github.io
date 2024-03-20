@@ -146,7 +146,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/20/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C4/" data-id="cltzhlymq00012s3303vnbpg0" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/03/20/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C4/" data-id="cltzhmeye00063k33hiwj61hw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -213,7 +213,7 @@ ga('send', 'pageview');
 <p>每组测试数据输出两行，分别是最小值、最大值及其下标。具体格式见样例。多组测试数据之间以空行分隔。</p>
 <h3 id="输入样例-2"><a class="markdownIt-Anchor" href="#输入样例-2"></a> 输入样例</h3>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">5 10 20 40 -100 0</span><br><span class="line">10 23 12 -32 4 6 230 100 90 -120 15</span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n, t, minIndex, maxIndex;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">find</span><span class="params">(<span class="type">int</span> *num, <span class="type">int</span> n, <span class="type">int</span> &amp;minIndex, <span class="type">int</span> &amp;maxIndex)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	minIndex = maxIndex = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(num[minIndex] &gt; num[i])</span><br><span class="line">		&#123;</span><br><span class="line">			minIndex = num[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(num[maxIndex] &lt; num[i])</span><br><span class="line">		&#123;</span><br><span class="line">			maxIndex = num[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	std::cin &gt;&gt; t;</span><br><span class="line">	<span class="keyword">while</span>(t--)</span><br><span class="line">	&#123;</span><br><span class="line">		std::cin &gt;&gt; n;</span><br><span class="line">		<span class="type">int</span> *num = <span class="keyword">new</span> <span class="type">int</span>[n];</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			std::cin &gt;&gt; num[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">find</span>(num, n, minIndex, maxIndex);</span><br><span class="line">		std::cout &lt;&lt; <span class="string">&quot;min=&quot;</span> &lt;&lt; num[minIndex] &lt;&lt; <span class="string">&quot; minindex=&quot;</span> &lt;&lt; minIndex &lt;&lt; std::endl;</span><br><span class="line">		std::cout &lt;&lt; <span class="string">&quot;max=&quot;</span> &lt;&lt; num[maxIndex] &lt;&lt; <span class="string">&quot; maxindex=&quot;</span> &lt;&lt; maxIndex &lt;&lt; std::endl &lt;&lt; std::endl;</span><br><span class="line">		<span class="keyword">delete</span> num;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n, t, minIndex, maxIndex;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">find</span><span class="params">(<span class="type">int</span> *num, <span class="type">int</span> n, <span class="type">int</span> &amp;minIndex, <span class="type">int</span> &amp;maxIndex)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	minIndex = maxIndex = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(num[minIndex] &gt; num[i])</span><br><span class="line">		&#123;</span><br><span class="line">			minIndex = i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(num[maxIndex] &lt; num[i])</span><br><span class="line">		&#123;</span><br><span class="line">			maxIndex = i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	std::cin &gt;&gt; t;</span><br><span class="line">	<span class="keyword">while</span>(t--)</span><br><span class="line">	&#123;</span><br><span class="line">		std::cin &gt;&gt; n;</span><br><span class="line">		<span class="type">int</span> *num = <span class="keyword">new</span> <span class="type">int</span>[n];</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			std::cin &gt;&gt; num[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">find</span>(num, n, minIndex, maxIndex);</span><br><span class="line">		std::cout &lt;&lt; <span class="string">&quot;min=&quot;</span> &lt;&lt; num[minIndex] &lt;&lt; <span class="string">&quot; minindex=&quot;</span> &lt;&lt; minIndex &lt;&lt; std::endl;</span><br><span class="line">		std::cout &lt;&lt; <span class="string">&quot;max=&quot;</span> &lt;&lt; num[maxIndex] &lt;&lt; <span class="string">&quot; maxindex=&quot;</span> &lt;&lt; maxIndex &lt;&lt; std::endl &lt;&lt; std::endl;</span><br><span class="line">		<span class="keyword">delete</span> num;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr />
 <h2 id="小数输入输出结构体"><a class="markdownIt-Anchor" href="#小数输入输出结构体"></a> 小数输入输出(结构体)</h2>
 <h3 id="题目描述-3"><a class="markdownIt-Anchor" href="#题目描述-3"></a> 题目描述</h3>
@@ -277,7 +277,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/20/%E6%8C%87%E9%92%883/" data-id="cltzhlyms00042s333bzraxcl" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/03/20/%E6%8C%87%E9%92%883/" data-id="cltzhmeyi000g3k3309dm7lry" class="article-share-link">Share</a>
       
       
     </footer>
@@ -338,7 +338,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/12/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C3/" data-id="cltzhlymm00002s33bfmdbg2k" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/03/12/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C3/" data-id="cltzhmeyd00053k33b6fogk9n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -478,7 +478,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/07/%E6%8C%87%E9%92%88/" data-id="cltn7r1bd0003pk330ysj5zwd" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/03/07/%E6%8C%87%E9%92%88/" data-id="cltzhmeyh000d3k332xb35pym" class="article-share-link">Share</a>
       
       
     </footer>
@@ -705,7 +705,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/07/%E6%8C%87%E9%92%882/" data-id="cltrgblk90000pc330xryg6fm" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/03/07/%E6%8C%87%E9%92%882/" data-id="cltzhmeyh000e3k33dryr3iu0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -761,7 +761,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/05/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C2/" data-id="cltn7r1bf0005pk338pabd53v" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/03/05/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C2/" data-id="cltzhmeyb00033k33dmya90u4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -821,7 +821,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/27/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C0%E5%92%8C%E5%AE%9E%E9%AA%8C1/" data-id="cltn7r1bb0002pk3315ml14mb" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/02/27/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C0%E5%92%8C%E5%AE%9E%E9%AA%8C1/" data-id="cltzhmey800013k339fk7eids" class="article-share-link">Share</a>
       
       
     </footer>
