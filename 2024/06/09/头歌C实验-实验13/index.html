@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  <meta charset="utf-8">
+  
+  <title>头歌C实验-实验13 | 吟游蚊子的蚊子包</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="数组循环右移 123456789101112131415161718192021222324252627282930313233343536373839404142#include &lt;stdio.h&gt;#define MAXN 10int ArrayShift( int a[], int n, int m );int main()&#123;    int a[MAXN], n, m;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="头歌C实验-实验13">
+<meta property="og:url" content="http://example.com/2024/06/09/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C13/index.html">
+<meta property="og:site_name" content="吟游蚊子的蚊子包">
+<meta property="og:description" content="数组循环右移 123456789101112131415161718192021222324252627282930313233343536373839404142#include &lt;stdio.h&gt;#define MAXN 10int ArrayShift( int a[], int n, int m );int main()&#123;    int a[MAXN], n, m;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-06-09T10:33:37.000Z">
+<meta property="article:modified_time" content="2024-06-09T13:37:27.311Z">
+<meta property="article:author" content="吟游蚊子">
+<meta property="article:tag" content="code">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@coolwuxing">
+  
+    <link rel="alternative" href="/atom.xml" title="吟游蚊子的蚊子包" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:700,400" rel="stylesheet" type="text/css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-43935113-3', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <div id="header-title">
+        <h1 id="logo-wrap">
+          <a href="/" id="logo">吟游蚊子的蚊子包
+          
+          </a>
+        </h1>
+      </div>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="main-wrap" class="outer">
+        <section id="main"><article id="post-头歌C实验-实验13" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2024/06/09/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C13/" class="article-date">
+  <time datetime="2024-06-09T10:33:37.000Z" itemprop="datePublished">2024-06-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80A/">程序设计基础A</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      头歌C实验-实验13
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="数组循环右移"><a class="markdownIt-Anchor" href="#数组循环右移"></a> 数组循环右移</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXN 10</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">ArrayShift</span><span class="params">( <span class="type">int</span> a[], <span class="type">int</span> n, <span class="type">int</span> m )</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a[MAXN], n, m;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;n, &amp;m);</span><br><span class="line">    <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; n; i++ ) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a[i]);</span><br><span class="line"></span><br><span class="line">    ArrayShift(a, n, m);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i != <span class="number">0</span>) <span class="built_in">printf</span>(<span class="string">&quot; &quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">ArrayShift</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> n, <span class="type">int</span> m)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> b[<span class="number">100</span>];</span><br><span class="line">    m %= n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        b[i] = a[i + n - m];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n - m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        b[i + m] = a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        a[i] = b[i]; <span class="comment">// 赋值回去</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="在数组中查找指定元素"><a class="markdownIt-Anchor" href="#在数组中查找指定元素"></a> 在数组中查找指定元素</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXN 10</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">search</span><span class="params">( <span class="type">int</span> <span class="built_in">list</span>[], <span class="type">int</span> n, <span class="type">int</span> x )</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i, index, n, x;</span><br><span class="line">    <span class="type">int</span> a[MAXN];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span>( i = <span class="number">0</span>; i &lt; n; i++ )</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a[i]);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;x);</span><br><span class="line">    index = search( a, n, x );</span><br><span class="line">    <span class="keyword">if</span>( index != <span class="number">-1</span> )</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;index = %d\n&quot;</span>, index);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Not found\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">search</span><span class="params">( <span class="type">int</span> <span class="built_in">list</span>[], <span class="type">int</span> n, <span class="type">int</span> x )</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">if</span>(<span class="built_in">list</span>[i] == x)</span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">return</span> i;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="使用函数的选择法排序"><a class="markdownIt-Anchor" href="#使用函数的选择法排序"></a> 使用函数的选择法排序</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXN 10</span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">sort</span><span class="params">( <span class="type">int</span> a[], <span class="type">int</span> n )</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i, n;</span><br><span class="line">    <span class="type">int</span> a[MAXN];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span>( i=<span class="number">0</span>; i&lt;n; i++ )</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a[i]);</span><br><span class="line"></span><br><span class="line">    sort(a, n);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;After sorted the array is:&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>( i = <span class="number">0</span>; i &lt; n; i++ )</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot; %d&quot;</span>, a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">sort</span><span class="params">( <span class="type">int</span> a[], <span class="type">int</span> n )</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="type">int</span> minindex = i;</span><br><span class="line">       <span class="keyword">for</span>(<span class="type">int</span> j = i + <span class="number">1</span>; j &lt; n; j++)</span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">if</span>(a[minindex] &gt; a[j])</span><br><span class="line">           &#123;</span><br><span class="line">               minindex = j;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="type">int</span> tmp = a[i];</span><br><span class="line">       a[i] = a[minindex];</span><br><span class="line">       a[minindex] = tmp;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="拆分实数的整数与小数部分"><a class="markdownIt-Anchor" href="#拆分实数的整数与小数部分"></a> 拆分实数的整数与小数部分</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">splitfloat</span><span class="params">( <span class="type">float</span> x, <span class="type">int</span> *intpart, <span class="type">float</span> *fracpart )</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">float</span> x, fracpart;</span><br><span class="line">    <span class="type">int</span> intpart;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%f&quot;</span>, &amp;x);</span><br><span class="line">    splitfloat(x, &amp;intpart, &amp;fracpart);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;The integer part is %d\n&quot;</span>, intpart);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;The fractional part is %g\n&quot;</span>, fracpart);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">splitfloat</span><span class="params">( <span class="type">float</span> x, <span class="type">int</span> *intpart, <span class="type">float</span> *fracpart )</span></span><br><span class="line">&#123;</span><br><span class="line">    *intpart = (<span class="type">int</span>)x;</span><br><span class="line">    *fracpart = x - *intpart;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="计算两数的和与差"><a class="markdownIt-Anchor" href="#计算两数的和与差"></a> 计算两数的和与差</h2>
+<p>实在太简单以至于不知道怎么写别的版本…</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">sum_diff</span><span class="params">( <span class="type">float</span> op1, <span class="type">float</span> op2, <span class="type">float</span> *psum, <span class="type">float</span> *pdiff )</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">float</span> a, b, sum, diff;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%f %f&quot;</span>, &amp;a, &amp;b);</span><br><span class="line">    sum_diff(a, b, &amp;sum, &amp;diff);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;The sum is %.2f\nThe diff is %.2f\n&quot;</span>, sum, diff);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">sum_diff</span><span class="params">( <span class="type">float</span> op1, <span class="type">float</span> op2, <span class="type">float</span> *psum, <span class="type">float</span> *pdiff )</span></span><br><span class="line">&#123;</span><br><span class="line">    *psum = op1 + op2;</span><br><span class="line">    *pdiff = op1 - op2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="利用指针找最大值"><a class="markdownIt-Anchor" href="#利用指针找最大值"></a> 利用指针找最大值</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">findmax</span><span class="params">( <span class="type">int</span> *px, <span class="type">int</span> *py, <span class="type">int</span> *pmax )</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> max, x, y;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;x, &amp;y);</span><br><span class="line">    findmax( &amp;x, &amp;y, &amp;max );</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, max);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">findmax</span><span class="params">( <span class="type">int</span> *px, <span class="type">int</span> *py, <span class="type">int</span> *pmax )</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">if</span>(*px &gt; *py)</span><br><span class="line">   &#123;</span><br><span class="line">       *pmax = *px;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">else</span></span><br><span class="line">   &#123;</span><br><span class="line">       *pmax = *py;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="使用函数找出数组中的最大值"><a class="markdownIt-Anchor" href="#使用函数找出数组中的最大值"></a> 使用函数找出数组中的最大值</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXN 10</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">FindArrayMax</span><span class="params">( <span class="type">int</span> a[], <span class="type">int</span> n )</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i, n;</span><br><span class="line">    <span class="type">int</span> a[MAXN];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span>( i=<span class="number">0</span>; i&lt;n; i++ )&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, FindArrayMax(a, n));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">FindArrayMax</span><span class="params">( <span class="type">int</span> a[], <span class="type">int</span> n )</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="type">int</span> ans = a[<span class="number">0</span>];</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">if</span>(ans &lt; a[i])</span><br><span class="line">       &#123;</span><br><span class="line">           ans = a[i];</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr />
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/06/09/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C13/" data-id="clx7latb00001r8jg8qsmexat" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/06/09/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C12/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">头歌C实验-实验12</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          
+            <aside id="sidebar" class="fixed">
+    <div class="widget-wrap fixed">
+    <h3 class="widget-title">Anchors</h3>
+
+    <div class="widget">
+        <ul class='toc'>
+        <li><a class='anchor' href='#logo'>Title</a></li>
+        <li><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%BE%AA%E7%8E%AF%E5%8F%B3%E7%A7%BB"><span class="toc-number">1.</span> <span class="toc-text"> 数组循环右移</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%8C%87%E5%AE%9A%E5%85%83%E7%B4%A0"><span class="toc-number">2.</span> <span class="toc-text"> 在数组中查找指定元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0%E7%9A%84%E9%80%89%E6%8B%A9%E6%B3%95%E6%8E%92%E5%BA%8F"><span class="toc-number">3.</span> <span class="toc-text"> 使用函数的选择法排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%86%E5%88%86%E5%AE%9E%E6%95%B0%E7%9A%84%E6%95%B4%E6%95%B0%E4%B8%8E%E5%B0%8F%E6%95%B0%E9%83%A8%E5%88%86"><span class="toc-number">4.</span> <span class="toc-text"> 拆分实数的整数与小数部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E4%B8%A4%E6%95%B0%E7%9A%84%E5%92%8C%E4%B8%8E%E5%B7%AE"><span class="toc-number">5.</span> <span class="toc-text"> 计算两数的和与差</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E6%8C%87%E9%92%88%E6%89%BE%E6%9C%80%E5%A4%A7%E5%80%BC"><span class="toc-number">6.</span> <span class="toc-text"> 利用指针找最大值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC"><span class="toc-number">7.</span> <span class="toc-text"> 使用函数找出数组中的最大值</span></a></li></ol></li>
+        <li><a class='anchor' href='#comments'>Comments</a></li> 
+        </ul>
+    </div>
+</div>
+    
+</aside>
+          
+        
+      </div>
+      <div id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></br>
+      &copy; 2024 吟游蚊子<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</div>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+    <a href='#logo' id='btn-btt'>^</a>
+  </div>
+</body>
+</html>

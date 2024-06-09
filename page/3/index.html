@@ -81,6 +81,74 @@ ga('send', 'pageview');
       <div id="main-wrap" class="outer">
         <section id="main">
   
+    <article id="post-头歌C实验-实验4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2024/03/20/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C4/" class="article-date">
+  <time datetime="2024-03-20T05:51:41.000Z" itemprop="datePublished">2024-03-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80A/">程序设计基础A</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/03/20/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C4/">头歌C实验-实验4</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>每次写头歌的博客我都觉得我在搬屎，这篇真让我生理不适。</p>
+<h2 id="统计英文字符无数组"><a class="markdownIt-Anchor" href="#统计英文字符无数组"></a> 统计英文字符(无数组)</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="type">char</span> c;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>) <span class="comment">// 死循环,需要用break手动退出</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>, &amp;c);</span><br><span class="line">		<span class="keyword">if</span>(c == <span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">break</span>; <span class="comment">// 退出循环</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>((c &gt;= <span class="string">&#x27;a&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;z&#x27;</span>) || (c &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;Z&#x27;</span>))</span><br><span class="line">		&#123;</span><br><span class="line">			ans++;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>, c);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(ans == <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot; -1&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="comment">// 注意两种输出都需要在前面带上空格</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot; %d&quot;</span>, ans);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="三天打鱼两天晒网"><a class="markdownIt-Anchor" href="#三天打鱼两天晒网"></a> 三天打鱼两天晒网</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">	<span class="type">int</span> ans = n;</span><br><span class="line">	n %= <span class="number">5</span>; <span class="comment">// 周期为5就对5取余</span></span><br><span class="line">	<span class="keyword">if</span>(n &lt; <span class="number">4</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Fishing in day %d&quot;</span>, ans);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Drying in day %d&quot;</span>, ans);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="查询水果价格"><a class="markdownIt-Anchor" href="#查询水果价格"></a> 查询水果价格</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="type">float</span> apple = <span class="number">3.00</span>, pear = <span class="number">2.50</span>, orange = <span class="number">4.10</span>, grape = <span class="number">10.20</span>;</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">&quot;[1] apple&quot;</span>);</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">&quot;[2] pear&quot;</span>);</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">&quot;[3] orange&quot;</span>);</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">&quot;[4] grape&quot;</span>);</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">&quot;[0] exit&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">	<span class="keyword">switch</span>(n)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">	<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;price = %.2f\n&quot;</span>, apple);</span><br><span class="line">	<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;price = %.2f\n&quot;</span>, pear);</span><br><span class="line">	<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;price = %.2f\n&quot;</span>, orange);</span><br><span class="line">	<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;price = %.2f\n&quot;</span>, grape);</span><br><span class="line">	<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">&quot;###&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="快递费用计算"><a class="markdownIt-Anchor" href="#快递费用计算"></a> 快递费用计算</h2>
+<p>真是一场酣畅淋漓的拉屎啊!</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> area;</span><br><span class="line">    <span class="type">float</span> weight, price, add;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d,%f&quot;</span>, &amp;area, &amp;weight);</span><br><span class="line">    <span class="keyword">if</span> (area == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        price = <span class="number">10</span>;</span><br><span class="line">        add = <span class="built_in">ceil</span>(weight - <span class="number">1</span>) * <span class="number">3</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Price: %.2f\n&quot;</span>, price + add);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (area == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        price = <span class="number">10</span>;</span><br><span class="line">        add = <span class="built_in">ceil</span>(weight - <span class="number">1</span>) * <span class="number">4</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Price: %.2f\n&quot;</span>, price + add);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (area == <span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        price = <span class="number">15</span>;</span><br><span class="line">        add = <span class="built_in">ceil</span>(weight - <span class="number">1</span>) * <span class="number">5</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Price: %.2f\n&quot;</span>, price + add);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (area == <span class="number">3</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        price = <span class="number">15</span>;</span><br><span class="line">        add = <span class="built_in">ceil</span>(weight - <span class="number">1</span>) * <span class="number">6.5</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Price: %.2f\n&quot;</span>, price + add);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (area == <span class="number">4</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        price = <span class="number">15</span>;</span><br><span class="line">        add = <span class="built_in">ceil</span>(weight - <span class="number">1</span>) * <span class="number">10</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Price: %.2f\n&quot;</span>, price + add);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">&quot;Error in Area\nPrice: 0.00&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="阶梯电价"><a class="markdownIt-Anchor" href="#阶梯电价"></a> 阶梯电价</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">double</span> n;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%lf&quot;</span>, &amp;n);</span><br><span class="line">	<span class="keyword">if</span>(n &lt; <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Invalid Value!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(n &lt;= <span class="number">50</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;cost = %.2f&quot;</span>, n * <span class="number">0.53</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;cost = %.2f&quot;</span>, <span class="number">50</span> * <span class="number">0.53</span> + (n - <span class="number">50</span>) * <span class="number">0.58</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="计算一元二次方程的根"><a class="markdownIt-Anchor" href="#计算一元二次方程的根"></a> 计算一元二次方程的根</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;math.h&gt;</span> <span class="comment">// sqrt()在这里</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">float</span> a, b, c;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Please enter the coefficients a,b,c:\n&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%f,%f,%f&quot;</span>, &amp;a, &amp;b, &amp;c);</span><br><span class="line">	<span class="keyword">if</span>(b * b &lt; <span class="number">4</span> * a * c)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;error!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;x1=%.4f, x2=%.4f&quot;</span>, (<span class="number">-1</span> * b + <span class="built_in">sqrt</span>(b * b - <span class="number">4</span> * a * c)) / (a * <span class="number">2</span>), (<span class="number">-1</span> * b - <span class="built_in">sqrt</span>(b * b - <span class="number">4</span> * a * c)) / (a * <span class="number">2</span>));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="输出三角形面积和周长"><a class="markdownIt-Anchor" href="#输出三角形面积和周长"></a> 输出三角形面积和周长</h2>
+<p>最笨的方法就是先写一个三数论大小…</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">float</span> a, b, c;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%f %f %f&quot;</span>, &amp;a, &amp;b, &amp;c);</span><br><span class="line">	<span class="keyword">if</span>(a &gt; b)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">float</span> temp = a;</span><br><span class="line">		a = b;</span><br><span class="line">		b = temp;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(b &gt; c)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">float</span> temp = b;</span><br><span class="line">		b = c;</span><br><span class="line">		c = temp;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 此时(a,b)&lt;c</span></span><br><span class="line">	<span class="keyword">if</span>(a + b &lt;= c)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;These sides do not correspond to a valid triangle&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">float</span> perimeter = a + b + c;</span><br><span class="line">		<span class="type">float</span> s = perimeter / <span class="number">2</span>;</span><br><span class="line">		<span class="type">float</span> area = <span class="built_in">sqrt</span>(s * (s - a) * (s - b) * (s - c));</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;area = %.2f; perimeter = %.2f&quot;</span>, area, perimeter);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="产品信息格式化"><a class="markdownIt-Anchor" href="#产品信息格式化"></a> 产品信息格式化</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> item, month, day, year;</span><br><span class="line">	<span class="type">float</span> p;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Enter item number:\n&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d\n&quot;</span>, &amp;item);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Enter unit price:\n&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%f\n&quot;</span>, &amp;p);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Enter purchase date (mm/dd/yy):\n&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d/%d/%d&quot;</span>, &amp;month, &amp;day, &amp;year);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Item Unit Purchase\n&quot;</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%-9d$ %-9.2f%02d%02d%02d\n&quot;</span>, item, p, month, day, year);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="字符过滤"><a class="markdownIt-Anchor" href="#字符过滤"></a> 字符过滤</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> t;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d\n&quot;</span>, &amp;t);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; t; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">char</span> c;</span><br><span class="line">		<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>, &amp;c);</span><br><span class="line">			<span class="keyword">if</span>(c == <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(c == <span class="string">&#x27;+&#x27;</span> || c == <span class="string">&#x27;-&#x27;</span> || c == <span class="string">&#x27;*&#x27;</span> || c == <span class="string">&#x27;/&#x27;</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;$&quot;</span>);</span><br><span class="line">				ans++;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>, c);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;\n%d\n&quot;</span>, ans);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/03/20/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C4/" data-id="clx7latb30005r8jgbr2p2b44" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-指针3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2024/03/20/%E6%8C%87%E9%92%883/" class="article-date">
@@ -212,9 +280,9 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-头歌C实验：实验3" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-头歌C实验-实验3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2024/03/12/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C3/" class="article-date">
+    <a href="/2024/03/12/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C3/" class="article-date">
   <time datetime="2024-03-12T02:59:17.000Z" itemprop="datePublished">2024-03-12</time>
 </a>
     
@@ -230,7 +298,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2024/03/12/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C3/">头歌C实验:实验3</a>
+      <a class="article-title" href="/2024/03/12/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C3/">头歌C实验-实验3</a>
     </h1>
   
 
@@ -263,7 +331,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/12/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C3/" data-id="clul7h4oy00055sjga964cf1h" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/03/12/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C3/" data-id="clx7latb20003r8jge5uub217" class="article-share-link">Share</a>
       
       
     </footer>
@@ -640,9 +708,9 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-头歌C实验：实验2" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-头歌C实验-实验2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2024/03/05/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C2/" class="article-date">
+    <a href="/2024/03/05/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C2/" class="article-date">
   <time datetime="2024-03-05T02:31:26.000Z" itemprop="datePublished">2024-03-05</time>
 </a>
     
@@ -658,7 +726,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2024/03/05/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C2/">头歌C实验:实验2</a>
+      <a class="article-title" href="/2024/03/05/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C2/">头歌C实验-实验2</a>
     </h1>
   
 
@@ -686,7 +754,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/05/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C2/" data-id="cltjjxwbh0001ssjg95442u1w" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/03/05/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C2/" data-id="clx7latb20002r8jg46szdyli" class="article-share-link">Share</a>
       
       
     </footer>
@@ -696,9 +764,9 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-头歌C实验：实验0和实验1" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-头歌C实验-实验0和实验1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2024/02/27/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C0%E5%92%8C%E5%AE%9E%E9%AA%8C1/" class="article-date">
+    <a href="/2024/02/27/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C0%E5%92%8C%E5%AE%9E%E9%AA%8C1/" class="article-date">
   <time datetime="2024-02-27T07:03:08.000Z" itemprop="datePublished">2024-02-27</time>
 </a>
     
@@ -714,7 +782,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2024/02/27/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C0%E5%92%8C%E5%AE%9E%E9%AA%8C1/">头歌C实验:实验0和实验1</a>
+      <a class="article-title" href="/2024/02/27/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C0%E5%92%8C%E5%AE%9E%E9%AA%8C1/">头歌C实验-实验0和实验1</a>
     </h1>
   
 
@@ -746,7 +814,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/27/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C%EF%BC%9A%E5%AE%9E%E9%AA%8C0%E5%92%8C%E5%AE%9E%E9%AA%8C1/" data-id="cltjjxwbm0006ssjg7jntd621" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/02/27/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C0%E5%92%8C%E5%AE%9E%E9%AA%8C1/" data-id="clx7latax0000r8jga2z692ji" class="article-share-link">Share</a>
       
       
     </footer>
@@ -770,7 +838,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80A/">程序设计基础A</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E9%AA%8C/">面向对象程序设计实验</a><span class="category-list-count">14</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80A/">程序设计基础A</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E9%AA%8C/">面向对象程序设计实验</a><span class="category-list-count">14</span></li></ul>
     </div>
   </div>
 
@@ -782,6 +850,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">Recents</h3>
     <div class="widget recents">
       <ul>
+        
+          <li>
+            <a href="/2024/06/09/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C13/">头歌C实验-实验13</a>
+          </li>
         
           <li>
             <a href="/2024/06/09/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C12/">头歌C实验-实验12</a>
@@ -799,10 +871,6 @@ ga('send', 'pageview');
             <a href="/2024/06/01/%E5%A4%B4%E6%AD%8CC%E5%AE%9E%E9%AA%8C-%E5%AE%9E%E9%AA%8C10/">头歌C实验-实验10</a>
           </li>
         
-          <li>
-            <a href="/2024/05/29/%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD/">运算符重载</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -814,7 +882,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">六月 2024</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">五月 2024</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">四月 2024</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">三月 2024</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">二月 2024</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">六月 2024</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">五月 2024</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">四月 2024</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">三月 2024</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/02/">二月 2024</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
